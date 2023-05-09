@@ -17,7 +17,7 @@ function MapTest ({location, defaultZoom}) {
 
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyBrqwAVcIca5jFX_fphXIeaQe9j4vTtbw8' }}
+        bootstrapURLKeys={{ key: 'ihateyou' }}
         defaultCenter={location}
         defaultZoom={defaultZoom}
       >
