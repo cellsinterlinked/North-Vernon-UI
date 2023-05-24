@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'PierBold';
+    src: url("../../Assets//Fonts/PPPierSans-Bold.otf")
+}
+
+@font-face {
+    font-family: 'PierReg';
+    src: url("../../Assets//Fonts/PPPierSans-Regular.otf")
+}
+
+
+.navbar {
+    width: 100%;
+    height: 5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.nav-button {
+    width: 12rem;
+    margin: 0rem;
+    padding-left: .4rem;
+    padding-right: 0.4rem;
+    font-family: 'PierReg';
+    letter-spacing: 4px;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.674);
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+  
+}
+
+.nav-button:hover {
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    border-right: 1px solid rgba(255, 255, 255, 0.247);
+    border-top: 1px solid rgba(255, 255, 255, 0.247);
+    color: rgb(255,186,64);
+    background-color: rgba(0, 0, 0, 0.06);
+ 
+}
+
+
+
+
+.sub-menu {
+    width: 12rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    right: -1px;
+    top: 6em;
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    border-right: 1px solid rgba(255, 255, 255, 0.247);
+    z-index: 5;
+    padding: 0;
+    display: none;
+    
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.247); */
+}
+
+.sub-subMenu {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    left: 11.9rem;
+    top: 0em;
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    border-right: 1px solid rgba(255, 255, 255, 0.247);
+    z-index: 5;
+    padding: 0;
+    display: none;
+    font-size: .6rem;
+    overflow: hidden;
+}
+
+.sub-subMenu :nth-child(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.247)
+}
+
+.sub-menu :nth-child(1) {
+    animation-delay : 0ms
+}
+
+.sub-menu :nth-child(2) {
+    animation-delay : 50ms
+}
+
+.sub-menu :nth-child(3) {
+    animation-delay : 100ms
+}
+
+.sub-menu :nth-child(4) {
+    animation-delay : 150ms
+}
+.sub-menu :nth-child(5) {
+    animation-delay : 200ms
+}
+
+.sub-menu :nth-child(6) {
+    animation-delay : 250ms
+}
+
+.sub-menu :nth-child(7) {
+    animation-delay : 300ms
+}
+
+.sub-menu :nth-child(8) {
+    animation-delay : 350ms
+}
+
+.sub-menu :nth-child(9) {
+    animation-delay : 400ms
+}
+
+.sub-menu :nth-child(10) {
+    animation-delay : 450ms
+}
+
+.sub-menu :nth-child(11) {
+    animation-delay : 500ms
+}
+
+.sub-menu :nth-child(12) {
+    animation-delay : 550ms
+}
+
+.sub-category {
+opacity: 0;    
+position: relative;
+height: 5em;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+cursor: pointer;
+transition: 500ms;
+animation: "fadein" 500ms forwards;
+/* animation-duration: 500ms; */
+
+
+
+}
+
+.sub-category:hover {
+    color: rgb(255,186,64);
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.menu-chevron {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar li:hover > ul {
+    display: initial;
+}
+
+.navbar li ul li:hover > ul {
+    display: initial;
+}
+
+
+
+@keyframes fadein {
+    0% {
+        margin-right: 5rem;
+        opacity: 0;
+       
+    }
+    100% {
+        margin-right: 0rem;
+        opacity: 1;
+    }
+}

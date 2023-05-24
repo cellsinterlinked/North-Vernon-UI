@@ -1,5 +1,8 @@
 import React from 'react'
 import MapTest from '../Components/Maps/MapTest';
+import LandingVideo from '../Components/VIsuals/LandingVideo';
+import Event from '../Components/Updates/Event';
+import GetInvolved from '../Components/Updates/GetInvolved';
 
 function Landing () {
 
@@ -11,8 +14,11 @@ function Landing () {
 
     return(
         <>
-        <div>This is landing page</div>
-        <MapTest location={location} defaultZoom={18}/>
+       
+        {/* <MapTest location={location} defaultZoom={18}/> */}
+        <LandingVideo />
+        <Event />
+        <GetInvolved />
         </>
     )
 }

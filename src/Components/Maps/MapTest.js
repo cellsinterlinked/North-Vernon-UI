@@ -17,7 +17,7 @@ function MapTest ({location, defaultZoom}) {
 
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'ihateyou' }}
+        bootstrapURLKeys={{ key: process.env.MAPS_API_KEY}}
         defaultCenter={location}
         defaultZoom={defaultZoom}
       >
@@ -33,3 +33,5 @@ function MapTest ({location, defaultZoom}) {
 }
 
 export default MapTest;
+
+// process.env.MAPS_API_KEY
